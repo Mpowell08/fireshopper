@@ -1,0 +1,99 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:background="#222222" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Large Text"
+            android:visibility="invisible"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/priceet"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_toLeftOf="@id/textView1"
+            android:ems="10"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/white"
+            android:background="#1d1d1d" >
+
+            <requestFocus />
+        </EditText>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/priceet"
+            android:layout_toRightOf="@id/textView1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner1"
+            android:layout_toRightOf="@id/priceet"
+            android:text="Large Text"
+            android:visibility="invisible"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/price2et"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/priceet"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@id/textView2"
+            android:background="#1d1d1d"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/white" />
+
+        <Spinner 
+            android:id="@+id/spinner2"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner1"
+            android:layout_toRightOf="@id/textView2"
+           
+            />
+
+        <TextView
+            android:id="@+id/totaltv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/totaltv"
+            android:layout_centerHorizontal="true"
+            android:text="Calculate!" />
+
+        <Button
+            android:id="@+id/twoitems"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:text="Buy One Get One 50%" />
+
+    </RelativeLayout>
